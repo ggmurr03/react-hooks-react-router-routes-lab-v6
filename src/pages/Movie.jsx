@@ -1,13 +1,25 @@
 import { useEffect, useState } from "react";
+import NavBar from "../components/NavBar";
 
-function Movie() {
+function Movie({title, time, genres}) {
+
+ 
+
+
+
   return (
     <>
       <header>
-        {/* What component should go here? */}
+        <NavBar />
       </header>
       <main>
-        {/* Movie info here! */}
+        <h1>{title}</h1>
+        <p>{time}</p>
+
+        {genres.map(genre=> <span>{genre}</span>)
+        
+        
+        }
       </main>
     </>
   );
